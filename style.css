@@ -1,0 +1,370 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.dbtn{
+
+display: inline-block;
+
+padding: 15px 25px;
+
+background: #c69453;
+
+border-radius: 10px;
+transition: .3s;
+}
+
+.dbtn:hover{
+    background-color: #fff;
+    color: #94672b !important;
+}
+
+
+.dbtn2{
+
+        display: inline-block;
+        
+        padding: 10px 20px;
+        
+        background: #c69453;
+        
+        border-radius: 5px;
+        
+        transition: .3s;
+
+        transform: translate(0px 0px);
+        
+    }
+
+    .dbtn2:hover {
+        background-color: #000;
+        color: #fff !important;
+        transform: translateY(10px);
+    }
+
+
+    .dbtn4{
+    padding: 10px 20px;
+    border-radius: 0px;
+    margin: 20px 0px 0px 0px;
+    border: none;
+}
+    .dbtn4:hover{
+        background-color: #c69453;
+        color: #fff;
+        border: none;
+       
+    }
+        
+
+
+/* <!-- heder section  --> */
+
+header{
+    background-color: rgba(0, 0, 0, .7) !important;
+    padding-top: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    position: fixed;
+    z-index: 99;
+}
+
+.logo{}
+.logo img{
+    width: 230px;
+}
+nav{}
+ul {
+    margin: 0px 0px;
+    /* margin-left: 0px; */
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+
+padding: 10px 20px;
+position: relative;
+transition: .4s;
+
+
+/* display: block; */
+
+line-height: 42px;
+}
+
+.primary-menu li:hover > a{
+    color: #c69453 !important;
+}
+
+
+.primary-menu li a::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 1px;
+    
+    background-color:#c69453;
+    transform: scaleX(0);
+    
+    transition: .4s;
+
+}
+
+.primary-menu li a:hover::before{
+    transform: scaleX(1);
+    
+    
+   
+
+}
+
+/* dropdown menu */
+
+.dropdown{
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    right: 0;
+    margin-left: 0px;
+    transform: scale(0);
+    transform-origin: top center;
+    background-color: #fff;
+    transition: .4s;
+}
+.dropdown li{
+    display: block;
+}
+.dropdown li a{
+    display: block;
+    color:#000 !important;
+}
+.primary-menu li:hover ul{
+    transform: scale(1);
+    /* color: #c69453; */
+    
+}
+
+
+/* banner section */
+
+.banner{
+    background: url(https://i.ibb.co/y0z7BTk/ia-200000019.jpg) no-repeat center;
+    background-size: cover;
+    padding: 200px;
+    position: relative;
+    z-index: 1;
+
+    
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: -1;
+}
+
+
+.b-section{
+    text-align: center;
+}
+.b-section .banner-content{
+    color: #fff;
+}
+.b-section .banner-content h1{
+    font-size: 70px;
+    font-weight: 700;
+}
+.b-section .banner-content h3{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 30px;
+}
+.b-section .banner-content a{}
+
+.align{
+    background-color: #fff;
+    height: 2px;
+    width: 80px;
+    display: inline-block;
+    translate: -1px -6px;
+    border-radius: 5px;
+    margin: 0px 21px;
+}
+
+
+.services{
+    padding: 100px;
+}
+.services .service-item{
+    border: none;
+    box-shadow: 0px 0px 20px 13px #ddd;
+    text-align: center;
+    padding: 35px 10px;
+}
+
+
+/* .service-item:hover .dbtn2{
+    background-color: #fff;
+    color: #a57f16 !important;
+    
+} */
+  
+
+.service-item:hover .icon{
+    transform: rotateY(360deg);
+    transition: .5s;
+}
+
+.service-item:hover {
+    background-color: #fafafa;
+}
+
+
+
+
+.services .service-item-title{}
+.services .service-item-title h3{
+    margin: 10px 0;
+    font-size: 24px;
+}
+.services .service-item .c-content{
+    /* margin-bottom: 0px; */
+}
+.services .service-item .c-content p{
+    font-size: 18px;
+    color: #4c4b4b;
+    margin-bottom: 30px;
+}
+.services .service-item .c-content a{}
+
+
+    
+
+
+/* about section css */
+
+.About{
+    background-color: #f8f8f8;
+}
+.About .video-left{}
+.About .video-left{}
+.About .A-content{}
+.About .A-content h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px 0px 25px 0px;
+}
+.About .A-content h2 .d1{
+    color: #c69453;
+}
+.About .A-content p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 2px 0px  25px 0px;
+}
+.About .A-content details{}
+.About .A-content details summary{
+    font-size: 22px;
+    margin: 20px 0px 5px 0px;
+    font-weight: 600;
+}
+.About .A-content details p{
+    font-size: 17px;
+    font-weight: 600;
+}
+.About .A-content .dbtn3{
+    margin: 10px 0px 0px 0px;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+
+/* contact section css */
+
+.contact{
+    background-color: #f8f8f8;
+}
+.contact .form-left{
+    background-color: #f8f8f8;
+}
+
+
+.form-left h1{}
+.form-left p{
+    margin: 20px 0px;
+    font-size: 16px;
+}
+#dbtn3{
+    border: none;
+    padding: 12px 25px;
+    background: #c69453;
+    color: #fff;
+}
+#name{}
+#email{}
+#phone{}
+#sms{}
+
+.contact .bg-right {
+    background: url(https://i.ibb.co/Vgx620M/ia-200000022.jpg) no-repeat;
+    background-position: top right;
+    background-size: cover;
+    padding: 400px;
+}
+
+
+/* footer section */
+footer{
+    background-color: #6d6d6d;
+    color: #ffff;
+    padding: 20px 0;
+}
+
+footer p{
+
+font-size: 17px;
+}
+
+footer ul.Sociel-menu{
+    text-align: center;
+}
+footer ul.Sociel-menu li a{
+    font-size: 25px;
+}
+footer ul.Sociel-menu li{}
+
+
+.nill{
+    height: 130px;
+    width: 100%;
+}
